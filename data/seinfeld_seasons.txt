@@ -1,0 +1,10 @@
+Season	Episodes	First	Last
+1	5	July 5, 1989	June 21, 1990
+2	12	January 23, 1991	June 26, 1991
+3	23	September 18, 1991	May 6, 1992
+4	23	August 12, 1992	May 20, 1993
+5	21	September 16, 1993	May 19, 1994
+6	23	September 22, 1994	May 11, 1995
+7	22	September 21, 1995	May 16, 1996
+8	22	September 19, 1996	May 15, 1997
+9	22	September 25, 1997	May 14, 1998

@@ -1,0 +1,9 @@
+Season	Episodes	First	Last
+1	22	September 23, 2013	May 12, 2014
+2	22	September 22, 2014	May 14, 2015
+3	23	October 1, 2015	May 19, 2016
+4	22	September 22, 2016	May 18, 2017
+5	22	September 27, 2017	May 16, 2018
+6	22	January 3, 2019	May 17, 2019
+7	19	October 4, 2019	May 15, 2020
+8	22	November 13, 2020	June 23, 2021

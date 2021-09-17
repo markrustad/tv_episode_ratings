@@ -1,0 +1,25 @@
+Season	Episodes	First	Last
+1	14	August 13, 1997	February 25, 1998
+2	18	April 1, 1998	January 20, 1999
+3	17	April 7, 1999	January 12, 2000
+4	17	April 5, 2000	December 20, 2000
+5	14	June 20, 2001	December 12, 2001
+6	17	March 6, 2002	December 11, 2002
+7	15	March 19, 2003	December 17, 2003
+8	14	March 17, 2004	December 15, 2004
+9	14	March 9, 2005	December 7, 2005
+10	14	March 22, 2006	November 15, 2006
+11	14	March 7, 2007	November 14, 2007
+12	14	March 12, 2008	November 19, 2008
+13	14	March 11, 2009	November 18, 2009
+14	14	March 17, 2010	November 17, 2010
+15	14	April 27, 2011	November 16, 2011
+16	14	March 14, 2012	November 7, 2012
+17	10	September 25, 2013	December 11, 2013
+18	10	September 24, 2014	December 10, 2014
+19	10	September 16, 2015	December 9, 2015
+20	10	September 14, 2016	December 7, 2016
+21	10	September 13, 2017	December 6, 2017
+22	10	September 26, 2018	December 12, 2018
+23	10	September 25, 2019	December 11, 2019
+24	2	September 30, 2020	March 10, 2021
