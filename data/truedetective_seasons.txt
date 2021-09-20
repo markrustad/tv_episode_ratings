@@ -1,0 +1,4 @@
+Season	Episodes	First	Last
+1	8	January 12, 2014	March 9, 2014
+2	8	June 21, 2015	August 9, 2015
+3	8	January 13, 2019	February 24, 2019
