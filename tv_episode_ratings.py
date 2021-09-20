@@ -16,11 +16,11 @@ os.chdir('C:/Users/madar/Documents/GitHub/markrustad/tv_episode_ratings')
 
 # choose which show to analyze
 # ---------------------
-show = 'familyguy'
+# show = 'familyguy'
 # show = 'curb'
 # show = 'breakingbad'
 # show = 'bettercallsaul'
-# show = 'simpsons'
+show = 'simpsons'
 # show = 'seinfeld'
 # show = 'southpark'
 # show = 'blacklist'
@@ -30,6 +30,22 @@ show = 'familyguy'
 # show = 'got'
 # show = 'wire'
 # ---------------------
+
+# shows =['familyguy',
+#         'curb',
+#         'breakingbad',
+#         'bettercallsaul',
+#         'simpsons',
+#         'seinfeld',
+#         'southpark',
+#         'blacklist',
+#         'office',
+#         'sunny',
+#         'veep',
+#         'got',
+#         'wire']
+
+# for show in shows:
 
 # episode ratings
 rate = pd.read_table('data/'+show+'.txt', header=None)
@@ -82,9 +98,29 @@ hm = data.pivot(index='season',
 #%% visualize
 
 data.plot(x='season', y='rating', kind='scatter', xticks=range(1,eps.Season.max()+1))
-gp.rating.mean().plot(color='m', marker='*', lw=0, markersize=10)
+gp.rating.mean().plot(color='m', marker='*', lw=1, markersize=20, fillstyle='none')
 
-data.plot(x='number', y='rating', kind='scatter')
+fig0 = plt.gcf()
+ax0 = plt.gca()
+
+# Rotate the tick labels and set their alignment.
+plt.setp(ax0.get_xticklabels(), rotation=45, ha="right",
+         rotation_mode="anchor")
+
+asp = data.season.max()/data.ep.max()
+dim = 10
+
+fig0.set_figheight(dim)
+fig0.set_figwidth(dim)
+
+ax0.set_title('IMDB rating of ' + show)
+ax0.set_xlabel('Episode')
+ax0.set_ylabel('Season')
+fig0.tight_layout()
+
+plt.savefig('results/' + show + '_scatter.png')
+plt.close()
+
 
 #%% visualize: heatmap
 
@@ -115,8 +151,14 @@ for i in range(len(seasons)):
         text = ax.text(j, i, hm.to_numpy()[i, j],
                        ha="center", va="center", color='w')
 
-ax.set_title('IMDB rating of Episodes')
+ax.set_title('IMDB rating of ' + show)
 ax.set_xlabel('Episode')
 ax.set_ylabel('Season')
+
+fig.set_figheight(dim)
+fig.set_figwidth(dim/asp)
+
 fig.tight_layout()
-plt.show()
+
+plt.savefig('results/' + show + '_heatmap.png')
+plt.close()
